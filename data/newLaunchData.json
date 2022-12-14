@@ -1,0 +1,50 @@
+[
+    {
+        "id":16,
+        "product":"Pharmeasy Iron+Folic Acid With Zinc, Vitamin C &B12 - Maintains Overall Health - Bottle Of 60",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/O80793/pharmeasy-ironfolic-acid-with-zinc-vitamin-c-b12-maintains-overall-health-bottle-of-60-2-1668672053.jpg?dim=700x0&dpr=1&q=100",
+        "price":299.5
+    },
+    {
+        "id":17,
+        "product":"Liveasy Surgical'S Rolled Bandage Pack Of 12 5cm X 3mt",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/E52686/liveasy-surgicals-rolled-bandage-pack-of-12-5cm-x-3mt-2-1653648071.jpg?dim=700x0&dpr=1&q=100",
+        "price":185
+    },
+    {
+        "id":18,
+        "product":"Dettol Neem Bathing Soap Bar With Pure Neem Oil 75g (Buy 3 Get 1 Free) Combo Offer On Bath Soap",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/K49952/dettol-neem-bathing-soap-bar-with-pure-neem-oil-75g-buy-3-get-1-free-combo-offer-on-bath-soap-2-1664184591.jpg?dim=700x0&dpr=1&q=100",
+        "price":135
+    },
+    {
+        "id":21,
+        "product":"Prohance Hp (High Protein) Sugar-Free Powder Vanilla 400g",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/J64776/prohance-hp-high-protein-sugar-free-powder-vanilla-400g-2-1641794045.jpg?dim=700x0&dpr=1&q=100",
+        "price":786.05
+    },
+    {
+        "id":20,
+        "product":"Liveasy Surgical'S Rolled Bandage Pack Of 12 10cmx3mt",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/X79195/liveasy-surgicals-rolled-bandage-pack-of-12-10cmx3mt-2-1653648101.jpg?dim=700x0&dpr=1&q=100",
+        "price":345
+    },
+    {
+        "id":22,
+        "product":"Cureskin Hydration Gel 50gm",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/Z00367/cureskin-hydration-gel-50gm-2-1669781648.jpg?dim=700x0&dpr=1&q=100",
+        "price":300
+    },
+    {
+        "id":23,
+        "product":"Nicotex Nicotine Patch 7mg (7 Patches)",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/A47907/nicotex-nicotine-patch-7mg-7-patches-2-1660989963.jpg?dim=700x0&dpr=1&q=100",
+        "price":599
+    },
+    {
+        "id":26,
+        "product":"Sugar Free Natura Low Calorie Sweetner 500 Pellets",
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/U87029/sugar-free-natura-low-calorie-sweetner-500-pellets-6.1-1669362312.jpg",
+        "price":285
+    }
+]
