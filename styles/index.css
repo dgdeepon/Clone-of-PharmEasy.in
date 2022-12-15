@@ -6,6 +6,13 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
+/* Top Search */
+
+.topsearch{
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
 
 /* Navigation Bar */
 
@@ -282,11 +289,6 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.topsearch{
-    position: fixed;
-    width: 100%;
-    visibility: hidden;
 }
 
 /* App Banner */

@@ -1,3 +1,7 @@
+// Home page load
+
+let logo=document.querySelector("mainLogo");
+
 
 
   // Lab Test Slideshow
@@ -47,6 +51,8 @@
       launchDisplay.append(box);
     })
   }
+
+
 
 
 
