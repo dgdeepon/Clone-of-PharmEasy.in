@@ -6,11 +6,20 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
+/* Top Search */
+
+.topsearch{
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
 
 /* Navigation Bar */
 
 #navbar{
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: space-between;
 }
 #navbar>div{
@@ -28,8 +37,18 @@ body{
     align-items: center;
     width: 22%;
 }
+#navbar a{
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
 #navbar>div:last-child img{
     width: 20%;
+}
+#navbar>div:last-child{
+  margin-top: 10px;
 }
 #navbar>div:last-child button{
     display: flex; 
@@ -49,10 +68,11 @@ body{
     width: 35%;
 }
 #navbar>div:first-child img{
-    width: 40%;
+    width: 100%;
 }
 #navbar>div:first-child div p{
     align-items: center;
+    width: 250px;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;
@@ -273,8 +293,9 @@ body{
     color: rgb(71, 70, 70);
 }
 #newLaunchProduct img{
-    width: 45%;
-    margin: auto;
+  width: 100%;
+  height: 200px;
+  object-fit:contain;
 }
 .titleSize{
     display: -webkit-box;
@@ -282,4 +303,68 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* App Banner */
+
+
+
+/* Aditional Information */
+
+#aditionalInformation{
+  width: 90%;
+  margin: auto;
+  font-size: 93%;
+  margin-top: 80px;
+}
+#aditionalInformation h4,
+#aditionalInformation h3{
+  color: rgb(71, 70, 70);
+}
+#aditionalInformation p{
+  color: grey;
+}
+
+/* Footer */
+#footerBar{
+  display: flex;
+  justify-content: space-evenly;
+}
+#footerBar h3{
+  color: rgb(71, 70, 70);
+}
+#footerBar p{
+  color: grey;
+  font-size: 15px;
+  cursor: pointer;
+}
+#mainFooter{
+  width: 95%;
+  margin: auto;
+  background-color: rgba(225, 236, 255, 0.452);
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom:50px ;
+}
+#mainFooter>div:last-child{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  
+  color: rgb(71, 70, 70);
+}
+#mainFooter>div:last-child div>div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+}
+#mainFooter>div:last-child div>div img{
+  width: 5%;
+  height: 90%;
+}
+#mainFooter>div:last-child div>div img:nth-child(3){
+  width: 3%;
+  height: 100%;
 }
