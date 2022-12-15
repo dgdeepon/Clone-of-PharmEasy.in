@@ -288,3 +288,63 @@ body{
     width: 100%;
     visibility: hidden;
 }
+
+/* Aditional Information */
+
+#aditionalInformation{
+  width: 90%;
+  margin: auto;
+  font-size: 93%;
+  margin-top: 80px;
+}
+#aditionalInformation h4,
+#aditionalInformation h3{
+  color: rgb(71, 70, 70);
+}
+#aditionalInformation p{
+  color: grey;
+}
+
+/* Footer */
+#footerBar{
+  display: flex;
+  justify-content: space-evenly;
+}
+#footerBar h3{
+  color: rgb(71, 70, 70);
+}
+#footerBar p{
+  color: grey;
+  font-size: 15px;
+  cursor: pointer;
+}
+#mainFooter{
+  width: 95%;
+  margin: auto;
+  background-color: rgba(225, 236, 255, 0.452);
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom:50px ;
+}
+#mainFooter>div:last-child{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  
+  color: rgb(71, 70, 70);
+}
+#mainFooter>div:last-child div>div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+}
+#mainFooter>div:last-child div>div img{
+  width: 5%;
+  height: 90%;
+}
+#mainFooter>div:last-child div>div img:nth-child(3){
+  width: 3%;
+  height: 100%;
+}
