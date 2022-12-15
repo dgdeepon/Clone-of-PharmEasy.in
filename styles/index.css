@@ -18,6 +18,8 @@ body{
 
 #navbar{
     display: flex;
+    width: 90%;
+    margin: auto;
     justify-content: space-between;
 }
 #navbar>div{
@@ -35,8 +37,18 @@ body{
     align-items: center;
     width: 22%;
 }
+#navbar a{
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
 #navbar>div:last-child img{
     width: 20%;
+}
+#navbar>div:last-child{
+  margin-top: 10px;
 }
 #navbar>div:last-child button{
     display: flex; 
@@ -56,10 +68,11 @@ body{
     width: 35%;
 }
 #navbar>div:first-child img{
-    width: 40%;
+    width: 100%;
 }
 #navbar>div:first-child div p{
     align-items: center;
+    width: 250px;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;
@@ -93,7 +106,6 @@ body{
 #searchres{
   /* position: relative; */
 }
-
 /* Top Section */
 #category{
     width: 90%;
