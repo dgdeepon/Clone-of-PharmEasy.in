@@ -44,3 +44,14 @@
     background-color: rgb(215, 250, 250);
     cursor: pointer;
 }
+
+/* Brand Search */
+#brandSearch{
+    border-radius: 15px;
+    /* outline: 0; */
+    border: 0.50 solid grey;
+}
+#bSearchRes{
+    display: block;
+    position: absolute;
+}

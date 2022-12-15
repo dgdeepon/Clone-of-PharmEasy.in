@@ -6,6 +6,8 @@ let priceFilter3=document.getElementById("b299");
 let priceFilter4=document.getElementById("b399");
 let priceFilter5=document.getElementById("b499");
 let priceFilter6=document.getElementById("av500");
+let bSearch=document.getElementById("brandSearch");
+let bSearchRes=document.getElementById("brandSearchResult");
 
 let fetchedData=[];
 
@@ -137,5 +139,19 @@ function priceFiltered(n){
         }
     })
 }
+
+bSearch.addEventListener("input",(e)=>{
+    let item=e.target.value;
+    let bsearched=fetchedData.filter((el)=>{
+        if(el.product.toLowerCase().includes(item)){
+            return true;
+        }else {
+            return false;
+        }
+    })
+
+    createDOM(bsearched);
+})
+
 
 

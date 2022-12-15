@@ -24,13 +24,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <nav id="sndNav" class="topsearch">
+    <!-- <nav id="sndNav" class="topsearch">
         <h4><span class="material-symbols-outlined">
             menu
             </span></h4>
         <input type="search" id="productSearch" placeholder="  Search for Medicine">
-        <!-- <input type="file" id="uploadP"> -->
-    </nav>
+        <input type="file" id="uploadP">
+    </nav> -->
         <nav id="navbar">
             <div>
                 <img class="mainLogo" src="images/mainLogo.png" alt="">
@@ -52,6 +52,7 @@
                 menu
                 </span></h4>
             <input type="search" id="productSearch" placeholder="  Search for Medicine">
+            <div id="searchres"></div>
             <!-- <input type="file" id="uploadP"> -->
         </nav>
         
@@ -68,8 +69,8 @@
         <section id="FPsection">
             <div id="featurs">
                 <h3>Brand</h3>
-                <input type="search" name="" id="">
-                <div class="searchfilter"></div>
+                <input type="search" name="" id="brandSearch" placeholder="Search By Brand Name">
+                <div id="brandSearchResult"></div>
                 <h3>Price</h3>
                 <div class="pricefilter">
                     <div>
