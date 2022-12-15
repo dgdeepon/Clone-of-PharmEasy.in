@@ -20,7 +20,6 @@
     return rec.json();
   })
   .then((res)=>{
-    console.log(res);
     createProduct(res);
   })
   .catch(function(err){

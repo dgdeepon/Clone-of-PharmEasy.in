@@ -283,3 +283,8 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.topsearch{
+    position: fixed;
+    width: 100%;
+    visibility: hidden;
+}
