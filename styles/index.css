@@ -339,6 +339,7 @@ a:-webkit-any-link {
   z-index: 20;
   padding-top: 15%;
   text-align: center;
+  fill-opacity:calc();
 }
 #loginWindow #closelogin{
   margin: 0;

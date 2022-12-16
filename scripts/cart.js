@@ -4,12 +4,19 @@ let cartWindowData=JSON.parse(localStorage.getItem("cartData")) || [];
 let cartDisplay=document.getElementById("myCart");
 let count=document.getElementById("productCountCart");
 let sum=document.getElementById("totalSum");
+let totalQuentity=document.getElementById("quantity");
+let payAmount=document.getElementById("totalPrice");
+let cartAmout=document.getElementById("payableAmount");
 let total=0;
 
 myCartFiles(cartWindowData);
 function myCartFiles(data){
     cartDisplay.innerHTML=null;
     count.innerText=data.length;
+    totalQuentity.innerText=data.length;
+    sum.innerText=0;
+    payAmount.innerText=0;
+    cartAmout.innerText=0;
     data.forEach((element)=>{
         let container=document.createElement("div");
         container.setAttribute("class","cartContainerEdit");
@@ -45,15 +52,21 @@ function myCartFiles(data){
         incre.addEventListener("click",()=>{
             no.innerText++;
             count.innerText++;
+            totalQuentity.innerText++;
             total+=element.price;
             sum.innerText=parseFloat(total).toFixed(2);
+            payAmount.innerText=parseFloat(total).toFixed(2);
+            cartAmout.innerText=parseFloat(total).toFixed(2);
         })
         decre.addEventListener("click",()=>{
             if(no.innerText>1){
                 no.innerText--;
                 count.innerText--;
+                totalQuentity.innerText--;
                 total=total-element.price;
                 sum.innerText=parseFloat(total).toFixed(2);
+                payAmount.innerText=parseFloat(total).toFixed(2);
+                cartAmout.innerText=parseFloat(total).toFixed(2);
             }
         })
         image.setAttribute("src",element.image);
@@ -66,5 +79,7 @@ function myCartFiles(data){
         cartDisplay.append(container);
         total+=element.price;
         sum.innerText=parseFloat(total).toFixed(2);
+        payAmount.innerText=parseFloat(total).toFixed(2);
+        cartAmout.innerText=parseFloat(total).toFixed(2);
     })
 }
