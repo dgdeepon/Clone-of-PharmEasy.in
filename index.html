@@ -29,6 +29,16 @@
         <input type="search" id="productSearch" placeholder="  Search for Medicine">
         <input type="file" id="uploadP">
     </nav> -->
+        <div id="loginWindow">
+            <span class="material-symbols-outlined" id="closelogin">
+                close
+                </span>
+            <h1>Login/Signup</h1>
+            <form action="" id="loginInput">
+                <input type="tel" name="" id="phoneNo">
+                <input type="submit" value="Send OTP">
+            </form>
+        </div>
         <nav id="navbar">
             <div>
                 <a href="index.html"><img class="mainLogo" src="images/mainLogo.png"></a>
@@ -39,15 +49,26 @@
             </div>
             <div>
                 <button><img src="images/device.png" alt="">Download App</button>
-                <p><img src="images/login-.png" alt="">Hello, Log in</p>
+                <p id="SL"><img src="images/login-.png" alt="">Hello, Log in</p>
                 <p><img src="images/offer.png" alt="">Offers</p>
                 <p><img src="images/shopping-cart.png" alt=""><a href="cart.html">Cart</a></p>
             </div>
         </nav>
         <nav id="sndNav">
-            <h4><span class="material-symbols-outlined">
-                menu
-                </span></h4>
+            <div class="dropdown">
+                <h4><span class="material-symbols-outlined">
+                    menu
+                    </span></h4>
+                    <div class="dropdown-content">
+                        <a href="products.html">Mega Sale</a>
+                        <a href="">Medicine</a>
+                        <a href="">Healthcare</a>
+                        <a href="">Surgeries</a>
+                        <a href="">Health Blogs</a>
+                        <a href="">PLUS</a>
+                        <a href="">Value Store</a>
+                    </div>
+            </div>
             <input type="search" id="productSearch" placeholder="  Search for Medicine">
             <div id="searchres"></div>
             <!-- <input type="file" id="uploadP"> -->
@@ -140,14 +161,14 @@
         <section id="offerForYouSection">
             <h1>Log in to view offers</h1>
             <div id="offerforyou">
-                <div>
+                <div id="25%OFF">
                     <img src="https://cms-contents.pharmeasy.in/offer/f3815b82c1d-25_off.jpg?dim=1440x0" alt="">
                     <div>
                         <p>Flat 25% OFF + FREE Delivery on</p>
                         <p>medicines</p>
                     </div>
                 </div>
-                <div>
+                <div id="27%OFF">
                     <img src="https://cms-contents.pharmeasy.in/offer/c9368aeafca-flat_27_off.jpg?dim=1440x0" alt="">
                     <div>
                         <p>Flat 27% OFF + FREE Delivery on</p>
@@ -161,7 +182,8 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide shopbycate">
-                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/a7a03f6764393c65bab22e56de576a59.png?f=png?dim=256x0" alt="">
+                        <a href="products.html">
+                            <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/a7a03f6764393c65bab22e56de576a59.png?f=png?dim=256x0" alt=""></a>
                         <p>Mega clearance sale</p>
                     </div>
                     <div class="swiper-slide shopbycate">

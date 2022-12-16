@@ -31,6 +31,16 @@
         <input type="search" id="productSearch" placeholder="  Search for Medicine">
         <input type="file" id="uploadP">
     </nav> -->
+        <div id="loginWindow">
+            <span class="material-symbols-outlined" id="closelogin">
+                close
+                </span>
+            <h1>Login/Signup</h1>
+            <form action="" id="loginInput">
+                <input type="tel" name="" id="phoneNo">
+                <input type="submit" value="Send OTP">
+            </form>
+        </div>
         <nav id="navbar">
             <div>
                 <a href="index.html"><img class="mainLogo" src="images/mainLogo.png"></a>
@@ -42,15 +52,26 @@
             </div>
             <div>
                 <button><img src="images/device.png" alt="">Download App</button>
-                <p><img src="images/login-.png" alt="">Hello, Log in</p>
+                <p id="SL"><img src="images/login-.png" alt="">Hello, Log in</p>
                 <p><img src="images/offer.png" alt="">Offers</p>
                 <p><img src="images/shopping-cart.png" alt=""><a href="cart.html">Cart</a></p>
             </div>
         </nav>
         <nav id="sndNav">
-            <h4><span class="material-symbols-outlined">
-                menu
-                </span></h4>
+            <div class="dropdown">
+                <h4><span class="material-symbols-outlined">
+                    menu
+                    </span></h4>
+                    <div class="dropdown-content">
+                        <a href="">Mega Sale</a>
+                        <a href="">Medicine</a>
+                        <a href="">Healthcare</a>
+                        <a href="">Surgeries</a>
+                        <a href="">Health Blogs</a>
+                        <a href="">PLUS</a>
+                        <a href="">Value Store</a>
+                    </div>
+            </div>
             <input type="search" id="productSearch" placeholder="  Search for Medicine">
             <div id="searchres"></div>
             <!-- <input type="file" id="uploadP"> -->

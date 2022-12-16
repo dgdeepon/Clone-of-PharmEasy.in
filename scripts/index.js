@@ -90,6 +90,38 @@ let logo=document.querySelector("mainLogo");
       result.append(element.product);
     })
   }
+
+  // login Window
+  let clickCount=0;
+  if(window.location.pathname=="/opposite-bird-9660/index.html"){
+    let loginWindow1=document.getElementById("SL");
+    let loginWindow2=document.getElementById("25%OFF");
+    let loginWindow3=document.getElementById("27%OFF");
+  LSOpen(loginWindow2);
+  LSOpen(loginWindow1);
+  LSOpen(loginWindow3);
+  }else{
+    let loginWindow1=document.getElementById("SL");
+    LSOpen(loginWindow1);
+  }
+  function LSOpen(data){
+    data.addEventListener("click",()=>{
+      clickCount++;
+      if(clickCount==1){
+        document.getElementById("loginWindow").style.display="block";
+      }else{
+        document.getElementById("loginWindow").style.display="none";
+        clickCount=0;
+      }
+    });
+  }
+  let closeLogin=document.getElementById("closelogin");
+
+  closeLogin.addEventListener("click",()=>{
+    document.getElementById("loginWindow").style.display="none";
+    clickCount=0;
+  });
+
   
  
 
