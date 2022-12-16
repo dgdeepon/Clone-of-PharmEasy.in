@@ -65,12 +65,29 @@ function createDOM(data){
     });
 }
 
-priceFiltered(priceFilter1);
-priceFiltered(priceFilter2);
-priceFiltered(priceFilter3);
-priceFiltered(priceFilter4);
-priceFiltered(priceFilter5);
-priceFiltered(priceFilter6);
+if(window.location.pathname=="/opposite-bird-9660/products.html"){
+    priceFiltered(priceFilter1);
+    priceFiltered(priceFilter2);
+    priceFiltered(priceFilter3);
+    priceFiltered(priceFilter4);
+    priceFiltered(priceFilter5);
+    priceFiltered(priceFilter6);
+    
+
+    bSearch.addEventListener("input",(e)=>{
+        let item=e.target.value;
+        let bsearched=fetchedData.filter((el)=>{
+            if(el.product.toLowerCase().includes(item.toLowerCase())){
+                return true;
+            }else {
+                return false;
+            }
+        })
+    
+        createDOM(bsearched);
+    })
+}
+
 function priceFiltered(n){
     n.addEventListener("change",()=>{
         if(n.checked){
@@ -140,18 +157,7 @@ function priceFiltered(n){
     })
 }
 
-bSearch.addEventListener("input",(e)=>{
-    let item=e.target.value;
-    let bsearched=fetchedData.filter((el)=>{
-        if(el.product.toLowerCase().includes(item)){
-            return true;
-        }else {
-            return false;
-        }
-    })
 
-    createDOM(bsearched);
-})
 
 
 

@@ -429,6 +429,7 @@ a:-webkit-any-link {
 #mainFooter>div:last-child div>div img{
   width: 5%;
   height: 90%;
+  object-fit: contain;
 }
 #mainFooter>div:last-child div>div img:nth-child(3){
   width: 3%;
