@@ -102,7 +102,30 @@ a:-webkit-any-link {
     border-radius: 15px;
     border: 0;
 }
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 600px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(62, 62, 62);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {color: rgb(104, 105, 105); font-size: 20px;}
+
+.dropdown:hover .dropdown-content {display: block;}
 /* Top Section */
 #category{
     width: 90%;
@@ -305,7 +328,51 @@ a:-webkit-any-link {
     text-overflow: ellipsis;
 }
 
-/* App Banner */
+/* Login Window */
+#loginWindow{
+  display: none;
+  position:fixed;
+  background-color: rgb(18, 180, 163);;
+  width: 30%;
+  height: 100%;
+  right: 0%;
+  z-index: 20;
+  padding-top: 15%;
+  text-align: center;
+  fill-opacity:calc();
+}
+#loginWindow #closelogin{
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#loginInput{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  gap: 15px;
+  /* margin-top: 50%; */
+}
+#loginWindow h1{
+  color: white;
+}
+#loginInput input{
+  border-radius: 5px;
+  outline: 0;
+  font-size: 20px;
+  border: 0;
+  background-color: aliceblue;
+}
+#loginInput input+input{
+  cursor: pointer;
+  font-size: 15px;
+  background-color: aliceblue;
+}
 
 
 
@@ -363,6 +430,7 @@ a:-webkit-any-link {
 #mainFooter>div:last-child div>div img{
   width: 5%;
   height: 90%;
+  object-fit: contain;
 }
 #mainFooter>div:last-child div>div img:nth-child(3){
   width: 3%;
