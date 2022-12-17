@@ -122,15 +122,6 @@ let logo=document.querySelector("mainLogo");
     clickCount=0;
   });
 
-  // Store User Data
-  let UserData=document.getElementById("loginInput");
-  let inputField=document.getElementById("phoneNo");
-  UserData.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    if(Number(inputField.value)){
-      
-    }
-  })
   
 
   
