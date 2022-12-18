@@ -96,7 +96,7 @@ let logo=document.querySelector("mainLogo");
   let loginFlag=false;
   let loginStatus=JSON.parse(localStorage.getItem("loginStatus")) || [false];
   let loginDorpDown=document.getElementById("loginDropDownID");
-  if(window.location.pathname=="/index.html"){
+  if(window.location.pathname=="/index.html"||window.location.pathname=="/"){
     let loginWindow1=document.getElementById("SL");
     let loginWindow2=document.getElementById("25%OFF");
     let loginWindow3=document.getElementById("27%OFF");
