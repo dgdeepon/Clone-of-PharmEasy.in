@@ -197,6 +197,7 @@ let logo=document.querySelector("mainLogo");
   })
 
   // Logout
+  let logoutNow=document.getElementById("logOut");
   logoutNow.addEventListener("click",()=>{
     loginStatus[0]=false;
     document.getElementById("userName").innerText="Log in";
