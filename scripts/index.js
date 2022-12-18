@@ -93,6 +93,9 @@ let logo=document.querySelector("mainLogo");
 
   // login Window
   let clickCount=0;
+  let loginFlag=false;
+  let loginStatus=JSON.parse(localStorage.getItem("loginStatus")) || [false];
+  let loginDorpDown=document.getElementById("loginDropDownID");
   if(window.location.pathname=="/opposite-bird-9660/index.html"){
     let loginWindow1=document.getElementById("SL");
     let loginWindow2=document.getElementById("25%OFF");
@@ -105,7 +108,9 @@ let logo=document.querySelector("mainLogo");
     LSOpen(loginWindow1);
   }
   function LSOpen(data){
+    if(loginStatus[0]!==true){
     data.addEventListener("click",()=>{
+    if(loginFlag==false){
       clickCount++;
       if(clickCount==1){
         document.getElementById("loginWindow").style.display="block";
@@ -113,7 +118,12 @@ let logo=document.querySelector("mainLogo");
         document.getElementById("loginWindow").style.display="none";
         clickCount=0;
       }
+  }
     });
+  }else{
+    document.getElementById("userName").innerText="User";
+    loginDorpDown.style.display="block";
+  }
   }
   let closeLogin=document.getElementById("closelogin");
 
@@ -122,7 +132,77 @@ let logo=document.querySelector("mainLogo");
     clickCount=0;
   });
 
-  
+  // Login Functionality
+  let submitOTP=document.getElementById("loginInput");
+  let userInputData=document.getElementById("phoneNo");
+  let userOtp;
+  let dataArr= JSON.parse(localStorage.getItem("userData")) || [];
+  submitOTP.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    if(Number(userInputData.value)){
+      let dataCheck=dataArr.filter((el)=>{
+        if(el.userData==userInputData.value){
+          return true;
+        }else{
+          return false;
+        }
+      })
+      if(dataCheck[0]!=undefined&&dataCheck[0].status=="Active" ){
+      document.getElementById("loginWindow").style.display="none";
+    document.getElementById("userName").innerText="User";
+    loginFlag=true;
+    loginStatus[0]=true;
+    localStorage.setItem("loginStatus",JSON.stringify(loginStatus));
+    loginDorpDown.style.display="block";
+      }else{
+      let obj={
+        userData:userInputData.value,
+        status:"Active"
+      }
+      document.getElementById("submitOtp").style.display="block";
+      document.getElementById("loginWindow").style.display="none";
+      clickCount=0;
+      let otp=Math.random()*1000;
+      dataArr.push(obj);
+      localStorage.setItem("userData",JSON.stringify(dataArr))
+      userOtp=otp.toFixed(0);
+      alert(otp.toFixed(0));
+      }
+    }
+  })
+
+  let closeOtp=document.getElementById("closeOTP");
+
+  closeOtp.addEventListener("click",()=>{
+    document.getElementById("submitOtp").style.display="none";
+  });
+
+  // OTP Verification
+  let checkOtp=document.getElementById("OTPInput");
+  let checkValue=document.getElementById("OTPNumber");
+
+  checkOtp.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    if(userOtp==checkValue.value){
+    document.getElementById("submitOtp").style.display="none";
+    userOtp=undefined;
+    document.getElementById("userName").innerText="User";
+    loginFlag=true;
+    loginStatus[0]=true;
+    localStorage.setItem("loginStatus",JSON.stringify(loginStatus));
+    loginDorpDown.style.display="block";
+    }else{
+      alert("Incorrect OTP");
+    }
+  })
+
+  // Logout
+  logoutNow.addEventListener("click",()=>{
+    loginStatus[0]=false;
+    document.getElementById("userName").innerText="Log in";
+    loginDorpDown.style.display="none";
+    localStorage.setItem("loginStatus",JSON.stringify(loginStatus));
+  })
 
   
  

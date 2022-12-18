@@ -86,6 +86,32 @@ a:-webkit-any-link {
     margin-bottom: 0;
 }
 
+/* Login DropDown */
+.dropdown-icon{
+  position: relative;
+  display: none;
+}
+
+.dropdown-content-Account {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-Account a {
+  color: rgb(62, 62, 62);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content-Account a:hover {color: rgb(104, 105, 105); font-size: 20px;}
+
+.dropdown-icon:hover .dropdown-content-Account {display: block;}
+
 /* Navigation Bar 2 */
 #sndNav{
     display: flex;
@@ -339,9 +365,9 @@ a:-webkit-any-link {
   z-index: 20;
   padding-top: 15%;
   text-align: center;
-  fill-opacity:calc();
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 70px 1100px;
 }
-#loginWindow #closelogin{
+#closelogin{
   margin: 0;
   padding: 0;
   padding-left: 0;
@@ -374,7 +400,50 @@ a:-webkit-any-link {
   background-color: aliceblue;
 }
 
-
+/* OTP Verification Window */
+#submitOtp{
+  display: none;
+  position:fixed;
+  background-color: rgb(18, 180, 163);;
+  width: 30%;
+  height: 100%;
+  right: 0%;
+  z-index: 20;
+  padding-top: 15%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 70px 1100px;
+}
+#closeOTP{
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  cursor: pointer;
+  border: 1px solid black;
+}
+#OTPInput{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  gap: 15px;
+  /* margin-top: 50%; */
+}
+#submitOtp h1{
+  color: white;
+}
+#submitOtp input{
+  border-radius: 5px;
+  outline: 0;
+  font-size: 20px;
+  border: 0;
+  background-color: aliceblue;
+}
+#submitOtp input+input{
+  cursor: pointer;
+  font-size: 15px;
+  background-color: aliceblue;
+}
 
 /* Aditional Information */
 
@@ -436,3 +505,4 @@ a:-webkit-any-link {
   width: 3%;
   height: 100%;
 }
+
