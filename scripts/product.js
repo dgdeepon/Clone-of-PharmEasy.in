@@ -65,7 +65,7 @@ function createDOM(data){
     });
 }
 
-if(window.location.pathname=="/opposite-bird-9660/products.html"){
+if(window.location.pathname=="/products.html"){
     priceFiltered(priceFilter1);
     priceFiltered(priceFilter2);
     priceFiltered(priceFilter3);
