@@ -31,8 +31,18 @@
             </span>
         <h1>Login/Signup</h1>
         <form action="" id="loginInput">
-            <input type="tel" name="" id="phoneNo">
+            <input type="tel" name="" id="phoneNo" placeholder="Enter your mobile number">
             <input type="submit" value="Send OTP">
+        </form>
+    </div>
+    <div id="submitOtp">
+        <span class="material-symbols-outlined" id="closeOTP">
+            close
+            </span>
+        <h1>Enter OTP</h1>
+        <form action="" id="OTPInput">
+            <input type="text" name="" id="OTPNumber">
+            <input type="submit" value="Submit OTP">
         </form>
     </div>
     <nav id="navbar">
@@ -45,7 +55,16 @@
         </div>
         <div>
             <button><img src="images/device.png" alt="">Download App</button>
-            <p id="SL"><img src="images/login-.png" alt="">Hello, Log in</p>
+            <p id="SL"><img src="images/login-.png" alt="">Hello, <span id="userName">Log in</span><div class="dropdown-icon" id="loginDropDownID">
+                <h4><span class="material-symbols-outlined">
+                    menu
+                    </span>
+                    <div class="dropdown-content-Account">
+                        <a href="">My Account</a>
+                        <a href=""><span id="logOut">Logout</span> </a>
+                    </div>
+            </div>
+        </p>
             <p><img src="images/offer.png" alt="">Offers</p>
             <p><img src="images/shopping-cart.png" alt=""><a href="cart.html">Cart</a></p>
         </div>
